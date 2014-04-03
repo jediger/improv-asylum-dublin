@@ -1,0 +1,66 @@
+body {
+	background: #000 url(../img/background.jpg) center top no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	font-family: 'Muli', sans-serif;
+}
+
+h1, h2 {
+	font-family: 'Fjalla One', sans-serif;
+	color: #6a6ca9;
+	font-weight: normal;
+	margin: 0 0 10px;
+}
+
+h1 {
+	font-size: 2em;
+	border-bottom: 1px #6a6ca9 solid;
+}
+
+a {
+	color: #fff;
+}
+
+.wrapper {
+	width: 975px;
+	margin: auto;
+}
+
+section.content {
+	background: rgba(0,0,0,.7);
+	padding: 15px;
+	color: #fff;
+	overflow: hidden;
+}
+
+section.content a {
+	color: #ee1c24;
+}
+
+a.button {
+	color: #fff;
+	font-family: 'Muli', sans-serif;
+	font-size: 14px;
+	text-transform: uppercase;
+	padding: 5px 10px;
+	background: #ee1c24;
+	line-height: 1em;
+	display: block;
+	float: left;
+}
+
+main {
+	float: left;
+	width: 74.1525424%;
+	color: #7d7d7d;
+}
+
+aside.sidebar {
+	float: right;
+	width: 22.7754237%;
+}
+
+main>section {
+	background: #fff;
+	padding: 15px 20px;
+}
