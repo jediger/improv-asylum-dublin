@@ -76,7 +76,8 @@ header nav .actions a {
 
 header ul.sub-menu {
 	position: absolute;
-	padding-top: 30px;
+	margin-top: 1em;
+	padding-top: 10px;
 	margin-left: -14px;
 	z-index: 30;
 	display: none;
