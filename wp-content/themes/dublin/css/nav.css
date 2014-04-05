@@ -59,6 +59,10 @@ header nav ul a {
 	margin: 0 10px 0 0;
 }
 
+header nav ul a:hover {
+	color: #ee1c24;
+}
+
 header nav .actions {
 	float: right;
 	padding: 2px 0;
@@ -68,6 +72,43 @@ header nav .actions a {
 	display: block;
 	float: left;
 	margin-left: 10px;
+}
+
+header ul.sub-menu {
+	position: absolute;
+	padding-top: 30px;
+	margin-left: -14px;
+	z-index: 30;
+	display: none;
+}
+
+header nav li:hover ul.sub-menu {
+	display: block;
+}
+
+header ul.sub-menu li {
+	float: none;
+	margin: 0;
+}
+
+header ul.sub-menu li:after {
+	content: none;
+	display: none;
+}
+
+header ul.sub-menu li a {
+	background: #000;
+	font-family: 'Muli', sans-serif;
+	text-transform: none;
+	float: none;
+	margin: 0;
+	font-size: 13px;
+	padding: 5px 14px;
+}
+
+header ul.sub-menu li a:hover {
+	background: #ee1c24;
+	color: #fff;
 }
 
 a.facebook, a.youtube {

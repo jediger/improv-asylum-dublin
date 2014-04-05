@@ -5,9 +5,8 @@ body {
 	font-family: 'Muli', sans-serif;
 }
 
-h1, h2 {
+h1, h2, h3 {
 	font-family: 'Fjalla One', sans-serif;
-	color: #6a6ca9;
 	font-weight: normal;
 	margin: 0 0 10px;
 }
@@ -15,6 +14,15 @@ h1, h2 {
 h1 {
 	font-size: 2em;
 	border-bottom: 1px #6a6ca9 solid;
+	color: #6a6ca9;
+}
+
+h2 {
+	font-size: 1.125em;
+}
+
+h3 {
+	font-size: 1em;
 }
 
 a {
@@ -62,5 +70,6 @@ aside.sidebar {
 
 main>section {
 	background: #fff;
+	color: #464646;
 	padding: 15px 20px;
 }
