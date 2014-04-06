@@ -98,6 +98,9 @@ function html5blank_header_scripts()
         wp_register_script('modernizr', 'http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.7.1/modernizr.min.js', array(), '2.6.2'); // Modernizr
         wp_enqueue_script('modernizr'); // Enqueue it!
 
+        wp_register_script('slick', get_template_directory_uri() . '/slick/slick.min.js', array('jquery'), '1.0.0'); // Custom scripts
+        wp_enqueue_script('slick'); // Enqueue it!
+
         wp_register_script('html5blankscripts', get_template_directory_uri() . '/js/scripts.js', array('jquery'), '1.0.0'); // Custom scripts
         wp_enqueue_script('html5blankscripts'); // Enqueue it!
     }
@@ -117,6 +120,9 @@ function html5blank_styles()
 {
     wp_register_style('normalize', get_template_directory_uri() . '/normalize.css', array(), '1.0', 'all');
     wp_enqueue_style('normalize'); // Enqueue it!
+    
+    wp_register_style('slick', get_template_directory_uri() . '/slick/slick.css', array(), '1.0', 'all');
+    wp_enqueue_style('slick'); // Enqueue it!
 
     wp_register_style('html5blank', get_template_directory_uri() . '/style.css', array(), '1.0', 'all');
     wp_enqueue_style('html5blank'); // Enqueue it!
@@ -132,6 +138,9 @@ function html5blank_styles()
     
     wp_register_style('sidebar', get_template_directory_uri() . '/css/sidebar.css', array(), '1.0', 'all');
     wp_enqueue_style('sidebar'); // Enqueue it!
+    
+    wp_register_style('events', get_template_directory_uri() . '/css/events.css', array(), '1.0', 'all');
+    wp_enqueue_style('events'); // Enqueue it!
 }
 
 // Register HTML5 Blank Navigation
@@ -416,18 +425,18 @@ function create_post_type_event()
     register_post_type('events', // Register Custom Post Type
         array(
         'labels' => array(
-            'name' => __('Events', 'events'), // Rename these to suit
-            'singular_name' => __('Event', 'event'),
+            'name' => __('Shows', 'events'), // Rename these to suit
+            'singular_name' => __('Show', 'event'),
             'add_new' => __('Add New', 'event'),
-            'add_new_item' => __('Add New Event', 'event'),
+            'add_new_item' => __('Add New Show', 'event'),
             'edit' => __('Edit', 'event'),
-            'edit_item' => __('Edit Event', 'event'),
-            'new_item' => __('New Event', 'event'),
-            'view' => __('View Event', 'event'),
-            'view_item' => __('View Event', 'event'),
-            'search_items' => __('Search Event', 'event'),
-            'not_found' => __('No Events found', 'event'),
-            'not_found_in_trash' => __('No Events found in Trash', 'event')
+            'edit_item' => __('Edit Show', 'event'),
+            'new_item' => __('New Show', 'event'),
+            'view' => __('View Show', 'event'),
+            'view_item' => __('View Show', 'event'),
+            'search_items' => __('Search Shows', 'event'),
+            'not_found' => __('No Shows found', 'event'),
+            'not_found_in_trash' => __('No Shows found in Trash', 'event')
         ),
         'public' => true,
         'hierarchical' => false, // Allows your posts to behave like Hierarchy Pages

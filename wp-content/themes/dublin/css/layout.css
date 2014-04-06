@@ -29,6 +29,10 @@ a {
 	color: #fff;
 }
 
+a:hover {
+	text-decoration: underline;
+}
+
 .wrapper {
 	width: 975px;
 	margin: auto;
@@ -57,6 +61,15 @@ a.button {
 	float: left;
 }
 
+a.button:hover {
+	background: #ab141a;
+	text-decoration: none;
+}
+
+section.content a.button {
+	color: #fff;
+}
+
 main {
 	float: left;
 	width: 74.1525424%;
@@ -73,3 +86,75 @@ main>section {
 	color: #464646;
 	padding: 15px 20px;
 }
+
+main>section.home {
+	padding: 15px 6px;
+	margin: 0 0 30px;
+}
+
+.slideshow ul.slick-dots {
+	right: 0;
+	width: auto;
+	bottom: 0;
+	color: #fff;
+	margin: 0 20px 5px 0;
+}
+
+.slideshow .slick-dots li {
+	margin: 0;
+}
+
+.slideshow .slick-dots li a:before {
+	color: #fff;
+	font-size: 14px;
+	opacity: 1;
+}
+
+.slideshow .slick-dots li.slick-active a:before {
+	color: #10ca9b;
+	opacity: 1;
+}
+
+.ads.slick-slider {
+	margin: 0;
+}
+
+.ads .ad a {
+	margin: 0 9px;
+	display: block;
+}
+
+.ads .ad a img {
+	display: block;
+	margin: auto;
+}
+
+.slick-prev, .slick-next {
+	width: 30px;
+	height: 30px;
+	opacity: 0;
+	-webkit-transition: opacity .2s;
+	-moz-transition: opacity .2s;
+	transition: opacity .2s;
+}
+
+.slick-slider:hover .slick-prev, .slick-slider:hover .slick-next {
+	opacity: 1;
+}
+
+.slick-next {
+	right: -6px;
+}
+
+.slick-prev {
+	left: -6px;
+}
+
+.slick-prev:before, .slick-next:before {
+	content: " ";
+	background: #10ca9b url(../img/slideshow-arrows.png) 0 0 no-repeat;
+	display: block;
+	width: 30px;
+	height: 30px;
+}
+.slick-next:before {background-position: right 0;}

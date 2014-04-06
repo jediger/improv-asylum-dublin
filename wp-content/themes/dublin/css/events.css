@@ -1,0 +1,40 @@
+.event-list article {
+	overflow: hidden;
+	padding: 0 0 26px;
+	margin: 0 0 26px;
+	border-bottom: 1px #6a6ca9 solid;
+}
+
+.event-list .text {
+	margin-left: 285px;
+}
+
+.event-list .event-image, article.type-events .event-image {
+	width: 250px;
+	float: left;
+	max-height: 175px;
+	overflow: hidden;
+	-moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+	-webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+.event-list .event-image img {
+	width: 100%;
+	display: block;
+}
+
+.event-list a.button, article.type-events a.button {
+	float: right;
+	display: block;
+}
+
+.event-list h2 a {
+	color: #464646;
+	text-transform: uppercase;
+}
+
+article.type-events .text {
+	margin-left: 285px;
+	
+}

@@ -61,6 +61,7 @@ header nav ul a {
 
 header nav ul a:hover {
 	color: #ee1c24;
+	text-decoration: none;
 }
 
 header nav .actions {

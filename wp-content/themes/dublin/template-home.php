@@ -1,24 +1,26 @@
-<?php /* Template Name: Demo Page Template */ get_header(); ?>
-
+<?php /* Template Name: Home Page Template */ get_header(); ?>
+<div class="slideshow">
+	<div class="slide"><img src="/wp-content/uploads/2014/04/slide1.jpg" alt="" /></div>
+	<div class="slide"><img src="/wp-content/uploads/2014/04/slide2.jpg" alt="" /></div>
+	<div class="slide"><img src="/wp-content/uploads/2014/04/slide3.jpg" alt="" /></div>
+</div>
 	<main role="main">
 		<!-- section -->
-		<section>
+		<section class="home">
 
-			<h1><?php the_title(); ?></h1>
 
 		<?php if (have_posts()): while (have_posts()) : the_post(); ?>
 
 			<!-- article -->
 			<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
-				<?php the_content(); ?>
-
-				<?php comments_template( '', true ); // Remove if you don't want comments ?>
-
-				<br class="clear">
-
-				<?php edit_post_link(); ?>
-
+				<div class="ads">
+					<div class="ad"><a href="#"><img src="/wp-content/uploads/2014/04/ad1.jpg" alt="" /></a></div>
+					<div class="ad"><a href="#"><img src="/wp-content/uploads/2014/04/ad2.jpg" alt="" /></a></div>
+					<div class="ad"><a href="#"><img src="/wp-content/uploads/2014/04/ad3.jpg" alt="" /></a></div>
+					<div class="ad"><a href="#"><img src="/wp-content/uploads/2014/04/ad3.jpg" alt="" /></a></div>
+				</div>
+				
 			</article>
 			<!-- /article -->
 
@@ -38,6 +40,8 @@
 
 		</section>
 		<!-- /section -->
+		<?php the_content(); ?>
+		<?php edit_post_link(); ?>
 	</main>
 
 <?php get_sidebar(); ?>
