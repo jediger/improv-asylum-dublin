@@ -38,3 +38,7 @@ article.type-events .text {
 	margin-left: 285px;
 	
 }
+
+article.type-events {
+	overflow: hidden;
+}

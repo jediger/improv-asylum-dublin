@@ -24,6 +24,7 @@
 				<?php edit_post_link(); // Always handy to have Edit Post Links available ?>
 	
 			</div>
+			<div class="clear"></div>
 			<a href="/events" class="return">&lt; return to all shows</a>
 
 		</article>
