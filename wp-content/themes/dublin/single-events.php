@@ -14,7 +14,8 @@
 			</h1>
 			<!-- /post title -->
 			<div class="event-image">
-				<img src="<?php print get_field('event_image')['url']; ?>" alt="" />
+				<?php $image = get_field('event_image'); ?>
+				<img src="<?php print $image['url']; ?>" alt="" />
 			</div>
 			<div class="text">
 				<a href="<?php the_field('tickets_link'); ?>" class="button tickets">Buy Tickets</a>
