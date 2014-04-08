@@ -38,14 +38,14 @@
 						</a>
 					</div>
 					<!-- /logo -->
-					<a href="http://laughboston.com/" class="lb-link">Visit Our Boston Site</a>
+					<a href="http://improvasylum.com/" class="lb-link">Visit Our Boston Site</a>
 					<!-- nav -->
 					<nav class="nav" role="navigation">
 						<?php html5blank_nav(); ?>
 						<div class="actions">
 							<a href="https://www.facebook.com/Improvasylum" class="facebook">Facebook</a>
 							<a href="http://www.youtube.com/user/ImprovAsylum" class="youtube">Youtube</a>
-							<a href="#" class="button">Buy Tickets</a>
+							<a href="http://sa1.seatadvisor.com/sabo/servlets/EventSearch?presenter=TLTIVOLI&event=IAB" class="button">Buy Tickets</a>
 						</div>
 					</nav>
 					<!-- /nav -->
