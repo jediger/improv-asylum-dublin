@@ -1,8 +1,12 @@
 <?php /* Template Name: Home Page Template */ get_header(); ?>
 <div class="slideshow">
-	<div class="slide"><img src="/wp-content/uploads/2014/04/slide1.jpg" alt="" /></div>
-	<div class="slide"><img src="/wp-content/uploads/2014/04/slide2.jpg" alt="" /></div>
-	<div class="slide"><img src="/wp-content/uploads/2014/04/slide3.jpg" alt="" /></div>
+	<?php 
+		$args = array( 'post_type' => 'slides', 'posts_per_page' => 10, 'orderby' => 'title', 'order' => 'ASC' );
+		$loop = new WP_Query( $args );
+		while ( $loop->have_posts() ) : $loop->the_post();
+			print '<div class="slide"><a href="' . get_field('link') . '"><img src="' . get_field('image') . '" alt="" /></a></div>';
+		endwhile;
+	?>
 </div>
 	<main role="main">
 		<!-- section -->
@@ -15,10 +19,13 @@
 			<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
 				<div class="ads">
-					<div class="ad"><a href="#"><img src="/wp-content/uploads/2014/04/ad1.jpg" alt="" /></a></div>
-					<div class="ad"><a href="#"><img src="/wp-content/uploads/2014/04/ad2.jpg" alt="" /></a></div>
-					<div class="ad"><a href="#"><img src="/wp-content/uploads/2014/04/ad3.jpg" alt="" /></a></div>
-					<div class="ad"><a href="#"><img src="/wp-content/uploads/2014/04/ad3.jpg" alt="" /></a></div>
+					<?php 
+						$args = array( 'post_type' => 'featured_images', 'posts_per_page' => 10, 'orderby' => 'title', 'order' => 'ASC' );
+						$loop = new WP_Query( $args );
+						while ( $loop->have_posts() ) : $loop->the_post();
+							print '<div class="ad"><a href="' . get_field('link') . '"><img src="' . get_field('image') . '" alt="" /></a></div>';
+						endwhile;
+					?>
 				</div>
 				
 			</article>
@@ -40,8 +47,10 @@
 
 		</section>
 		<!-- /section -->
-		<?php the_content(); ?>
-		<?php edit_post_link(); ?>
+		<div class="seo">
+			<?php the_content(); ?>
+			<?php edit_post_link(); ?>
+		</div>
 	</main>
 
 <?php get_sidebar(); ?>
