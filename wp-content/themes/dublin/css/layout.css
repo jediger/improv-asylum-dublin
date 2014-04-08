@@ -92,6 +92,10 @@ main>section.home {
 	margin: 0 0 30px;
 }
 
+.seo {
+	color: #fff;
+}
+
 .slideshow ul.slick-dots {
 	right: 0;
 	width: auto;
@@ -102,6 +106,10 @@ main>section.home {
 
 .slideshow .slick-dots li {
 	margin: 0;
+}
+
+.slideshow .slick-dots li a:hover {
+	text-decoration: none;
 }
 
 .slideshow .slick-dots li a:before {

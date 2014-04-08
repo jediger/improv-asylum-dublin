@@ -125,9 +125,14 @@ a.youtube {
 	background-size: 100% 100%;
 }
 
+a.youtube:hover {background-image: url(../img/youtube_over.png);}
+
 a.facebook {
 	width: 9px;
 	height: 17px;
 	background: url(../img/facebook.png) 0 0 no-repeat;
 	background-size: 100% 100%;
 }
+
+a.facebook:hover {background-image: url(../img/facebook_over.png);}
+

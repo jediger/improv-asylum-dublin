@@ -18,7 +18,7 @@
 			arrows: true,
 			dots: false,
 			autoplay: true,
-			autoplaySpeed: 2000
+			autoplaySpeed: 8000
 		});
 		
 	});

@@ -14,8 +14,7 @@
 			</h1>
 			<!-- /post title -->
 			<div class="event-image">
-				<?php $image = get_field('event_image'); ?>
-				<img src="<?php print $image['url']; ?>" alt="" />
+				<?php the_post_thumbnail('full'); // Fullsize image for the single post ?>
 			</div>
 			<div class="text">
 				<a href="<?php the_field('tickets_link'); ?>" class="button tickets">Buy Tickets</a>

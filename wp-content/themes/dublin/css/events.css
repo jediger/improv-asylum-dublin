@@ -12,11 +12,14 @@
 .event-list .event-image, article.type-events .event-image {
 	width: 250px;
 	float: left;
-	max-height: 175px;
 	overflow: hidden;
 	-moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
 	-webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
 	box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+.event-list .event-image {
+	max-height: 175px;
 }
 
 .event-list .event-image img {
